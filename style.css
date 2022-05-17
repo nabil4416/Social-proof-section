@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url(images/bg-pattern-top-desktop.svg) , url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top , bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px , 400px;
+    background-color: hsl(300, 24%, 96%)
+}
+
+main {
+  width: 1440px;
+  padding: 0 10%;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.topSection {
+  display: flex;
+  margin: 8% 0 5%;
+}
+
+header {
+    width: 50%;
+    padding-right: 15% ;
+}
+header h1 {
+  color: hsl(300, 43%, 22%);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1;
+}
+
+header p {
+  color: hsl(0, 1%, 66%);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.55;
+  margin-top: 6%;
+}
+
+.rated {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 2%;
+}
+
+.row {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3% 0% 3% 5%;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+}
+
+.row1 {
+  margin-left: -9%;
+  margin-bottom: 3%;
+}
+
+.row2 {
+  margin-left: -1%;
+  margin-bottom: 3%;
+}
+.row3 {
+  margin-left: 7%;
+}
+
+.stars {
+  width: 25%;
+  margin-right: 16%;
+  display: flex;
+}
+.stars img {
+  max-width: 100%;
+  margin-right: 5%;
+}
+.reviews {
+  width: 75%;
+}
+.reviews p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+
+.testemonials {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card {
+  width: 28%;
+  padding: 3% 0 2%;
+  background-color: hsl(300, 43%, 22%);
+  margin-right: 2%;
+  border-radius: 3%;
+}
+.buyer {
+  display: flex;
+  align-items: center;
+  padding-top: 1%;
+  margin-bottom: 7%;
+}
+.buyer img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 7%;
+  margin-left: 9%;
+}
+
+.buyer h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.buyer span{
+  display: block;
+  color: hsl(333, 80%, 67%);
+  margin-top: 3%;
+}
+
+.card p {
+  color: hsl(0, 0%, 100%);
+  padding: 0 9% 10px 9%;
+  line-height: 20px;
+}
+.card2 {
+  margin-top: 15px;
+}
+.card3 {
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 0;
+  }
+
+  .topSection {
+    display: flex;
+    margin: 8% 0 5%;
+  }
+  
+  header {
+      width: 50%;
+      padding: 0px 50px;
+  }
+  header h1 {
+    color: hsl(300, 43%, 22%);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 1;
+  }
+  
+  header p {
+    color: hsl(0, 1%, 66%);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-top: 6%;
+  }
+
+  .rated {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2%;
+  }
+  
+  .row {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3% 0% 3% 5%;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+  }
+  
+  .row1 {
+    margin-left: 0;
+    margin-bottom: 3%;
+  }
+  
+  .row2 {
+    margin-left: 0;
+    margin-bottom: 3%;
+  }
+  .row3 {
+    margin-left: 0;
+  }
+  
+  .stars {
+    width: 25%;
+    margin-right: 16%;
+    display: flex;
+  }
+  .stars img {
+    max-width: 100%;
+    margin-right: 5%;
+  }
+  .reviews {
+    width: 100%;
+  }
+  .reviews p {
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    letter-spacing: 1.5;
+    padding: 10px 0 0;
+  }
+  .testemonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8% 0 5%;
+    padding: 0 10px;
+}
+  header {
+    width: 350px;
+    padding: 0;
+  }
+  header h1 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  header p {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 6%;
+}
+
+.testemonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  padding: 3% 0 2%;
+  border-radius: 3%;
+}
+.buyer {
+  display: flex;
+  align-items: center;
+  padding-top: 1%;
+  margin-bottom: 7%;
+}
+.buyer img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 7%;
+  margin-left: 9%;
+}
+
+.buyer h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.buyer span{
+  display: block;
+  color: hsl(333, 80%, 67%);
+  margin-top: 3%;
+}
+
+.card p {
+  color: hsl(0, 0%, 100%);
+  padding: 0 9% 10px 9%;
+  line-height: 20px;
+}
+
+.card2 {
+  margin-top: 15px;
+}
+.card3 {
+  margin-top: 15px;
+}
+
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
